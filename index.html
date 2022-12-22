@@ -12,11 +12,11 @@
           }, interval);
       }
 
-      ( function init() {
-          startPersistentVibrate(1000, 0);
-      } )();
+      function init() {
+          startPersistentVibrate(200, 100);
+      }
   </script>
 </head>
-<body onload="startPersistentVibrate(1000, 0)">
+<body onload="init()">
 </body>
 </html>

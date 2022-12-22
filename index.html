@@ -2,6 +2,10 @@
 <head>
   <title>RIP</title>
   <script>
+      function startVibrate(duration) {
+          navigator.vibrate(duration);
+      }
+
       function startPersistentVibrate(duration, interval) {
           vibrateInterval = setInterval(() => {
               startVibrate(duration);
